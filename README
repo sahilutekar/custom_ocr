@@ -14,3 +14,7 @@ The License Plate Recognizer works in the following way:
 4.	Each filtered component is cropped from the image and resized to a fixed size, and padding is added to make it fit for the neural network.
 5.	The cropped and padded image is passed through a convolutional neural network to recognize the character in the image.
 6.	The recognized characters are combined to form the license plate number.
+
+For running the code 
+edit the main.py change image path and model path  then 
+python main.py
