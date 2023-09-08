@@ -1,0 +1,16 @@
+License Plate Recognizer
+The License Plate Recognizer is a simple Python script that can detect and recognize license plates in an image using OpenCV and a convolutional neural network. This can be useful for automating tasks that involve processing images of license plates, such as parking management systems, toll systems, and traffic monitoring.
+Requirements
+The following software packages are required to run the License Plate Recognizer:
+•	Python 3.6 or higher
+•	OpenCV
+•	Numpy
+•	TensorFlow
+How it works
+The License Plate Recognizer works in the following way:
+1.	The image is loaded from the specified path and preprocessed to enhance the contrast and remove noise.
+2.	Connected components in the image are identified using morphological operations, and components that are likely to contain license plate characters are filtered based on their size and aspect ratio.
+3.	The filtered components are sorted from left to right and top to bottom.
+4.	Each filtered component is cropped from the image and resized to a fixed size, and padding is added to make it fit for the neural network.
+5.	The cropped and padded image is passed through a convolutional neural network to recognize the character in the image.
+6.	The recognized characters are combined to form the license plate number.
