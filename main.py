@@ -1,11 +1,11 @@
 # Import the necessary packages
 import cv2
-# from EaglAIOCRDetector import LicensePlateRecognizer
+
 from Recq import LicensePlateRecognizer
 
 
 # Specify the path to the pre-trained model file
-model_path = "C:/Users/sahil/Desktop/lpr/alpr/trained_model/trained_model.h5"
+model_path = "C:/Users/sahil/Desktop/lpr/alpr/trained_mode/trained_model.h5"
 
 # Specify the target width and height for the cropped images
 target_width = 128
